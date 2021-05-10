@@ -123,7 +123,24 @@ var clave = window.prompt("Escribe tu clave");
 var salario = window.prompt("Escribe tu salario");
 if (correo == "correo@web.com" && clave == "abc123") {
     document.write("Bienvenido al sistema, sus datos son: <br><b>Correo </b>" + correo + "<br><b>Nombre del empleado </b>" + empleado + "<br><b>Salario </b>" + salario);
-}else{
+} else {
     document.write("clave incorrecta!");
 }
 
+var x = 10;
+var y = 20;
+
+/* Test A */
+
+A = x + x + 1;
+B = y - y - x;
+alert("Valor de X: " + A);
+alert("Valor de Y: " + B);
+
+/* Test B */
+x = 10;
+y = 20;
+C = (x - y) + 4;
+D = 4 + (y + 5);
+alert("Valor de X: " + C);
+alert("Valor de Y: " + D);
