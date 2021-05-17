@@ -169,7 +169,26 @@ if (clave == claveCorrecta) {
             saldo += monto;
             h1.innerHTML = "Depósito realizado correctamente, su saldo actualizado es " + saldo;
             break;
-            //AQUI QUEDAMOS
+        case 3:
+            monto = parseInt(window.prompt("Escribe el monto a retirar"));
+            if (monto <= saldo) {
+                saldo -= monto;
+                h1.innerHTML = "Retiro realizado correctamente, su saldo actualizado es " + saldo;
+            } else {
+                h1.innerHTML = "Saldo insuficiente!";
+            }
+            break;
+        case 4:
+            monto = parseInt(window.prompt("Escribe el monto a transferir"));
+            cbu = parseInt(window.prompt("Escribe el cbu a transferir"));
+            destinatario = window.prompt("Escribe el destinatario");
+            if (monto <= saldo) {
+                saldo -= monto;
+                h1.innerHTML = "transferencia realizada correctamente a " + destinatario + ", cbu "+ cbu +", su saldo actualizado es " + saldo;
+            } else {
+                h1.innerHTML = "Saldo insuficiente!";
+            }
+            break;
     }
 } else {
     document.write("Contraseña incorrecta!");
