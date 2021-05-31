@@ -119,3 +119,23 @@ for (var i = 0; i < paises.length; i++) {
 /*
 crear una tabla en html, agregar elementos (tr,td)desde js, tulizar for
 */
+
+var alumno = [
+    { nombre: "Juan", apellido: "Gonzalez", edad: 35, nacionalidad: "Argentino" }, { nombre: "Estefanía", apellido: "Arancio", edad: 31, nacionalidad: "Argentina" }, { nombre: "Nelly", apellido: "Ezquerro", edad: 62, nacionalidad: "Argentina" }
+]
+
+let complete = "<tr><th>Nombre del alumno</th> <th>Apellido</th> <th> Edad</th> <th> Nacionalidad</th> </tr>"
+
+for (var x = 0; x < alumno.length; x++) {
+    complete += "<tr><td>" + alumno[x].nombre + "</td><td>" + alumno[x].apellido + "</td><td>" + alumno[x].edad + "</td><td>" + alumno[x].nacionalidad + "</td></tr>";
+    let tab = document.getElementById("tab");
+    tab.innerHTML = complete;
+}
+
+
+let lugares = "<tr><th>Pais</th></tr>";
+for (var i = 0; i < paises.length; i++) {
+    lugares += "<tr><td>" + paises[i] + "</td></tr>";
+}
+tabla = document.getElementById("tabla");
+tabla.innerHTML = lugares;
