@@ -130,4 +130,4 @@ mostrar esos pacientes en un recuadro del html
 armar un form html con algunos datos de pacientes deben agregar al arreglo
 a través de funciones, eventos, dom
 */
-
+document.getElementById("dato").value = ""
